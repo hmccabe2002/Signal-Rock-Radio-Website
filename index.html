@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
     <title>Hunter McCabe</title>
     <style>
         #social{
@@ -44,57 +47,97 @@
         td{
         padding-left: 0.5em;
         }
-        aside{
-        }
+        aside ul li{
+			list-style-type: none;
+			display:inline;
+		}
+		aside ul li:before{
+			content: "• ";
+		}
+		aside ul li.end:after{
+			content: " •";
+		}
+		aside ul li a{
+			text-decoration: none;
+			border: 1px solid black;
+			color: black;
+		}
+		aside ul li a:hover{
+			border: 1px solid crimson;
+			color: crimson;
+		}
         footer{
         clear: both;
         }
-        aside ul li {
-        list-style-type: none;
-        display:inline;
-        padding-left: 1em;
-        padding-right: 1em;
-        }
-        aside ul li a{
-        text-decoration: none;
-        color: black;
-        }
-        aside ul li a:hover{
-        text-decoration: underline;
-        color: crimson;
-        }
+		.active {
+	font-weight: 600;
+}
+
+.tab-content {
+	display: none;
+}
+.tab {
+border: 1px solid black;
+text-decoration: none;
+color: black;
+}
+.tab:hover{
+	text-decoration: underline;
+	color: crimson;
+}
+.show {
+	display: block;
+}
     </style>
+	<script>
+	$(document).ready(function(){
+	$(".tab-list").on("click", ".tab", function(e) {
+	e.preventDefault();
+	
+  $(".tab").removeClass("active");
+	$(".tab-content").removeClass("show");
+	$(this).addClass("active");
+	$($(this).attr('href')).addClass("show");	
+});
+});
+
+	</script>
 </head>
 <body>
     <header>
         <h1>HUNTER ADAM McCABE</h1>
         <address><a href="tel:6362265107">(636) 226-5107</a><br><a href="mailto:hmccabewcp@gmx.com">hmccabewcp@gmx.com</a></address>
     </header>
-    <aside>
-        <h3>Projects:</h3>
-        <h4>HTML, CSS, JavaScript:</h4>
-        <ul>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/mdeditor">Markdown Editor</a></li>
+	<aside>
+	<br>
+	<div class="tabs">
+	<nav class="tab-list">
+		<a class="tab active" href="#one">HTML, CSS, JavaScript</a>
+		<a class="tab" href="#two">Python</a>
+		<a class="tab" href="#three">C++</a>
+	</nav>
+	<br>
+	<div id="one" class="tab-content show"><ul>
+			<li><a target="_blank" href="https://hmccabe2002.github.io/mdeditor">Markdown Editor</a></li>
             <li><a target="_blank" href="https://hmccabe2002.github.io/PythonShell">Python Shell with Brython</a></li>
             <li><a target="_blank" href="https://hmccabe2002.github.io/facebookloginpage">Facebook Login Page Replica</a></li>
             <li><a target="_blank" href="https://hmccabe2002.github.io/roadsigntest">Road Sign Test</a></li>
             <li><a target="_blank" href="https://hmccabe2002.github.io/lcdclock">LCD Clock</a></li>
             <li><a target="_blank" href="https://hmccabe2002.github.io/wheelspinner">Spinner Wheel</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/notes">Notes</a></li>
-        </ul><br><br>
-        <h4>Python:</h4>
-        <ul>
-            <li><a target="_blank" href="https://Binary-Game-Python-Version.hmccabe2002.repl.run">Binary Conversion Game</a></li>
+            <li class="end"><a target="_blank" href="https://hmccabe2002.github.io/notes">Notes</a></li>
+		</ul></div>
+
+	<div id="two" class="tab-content"><ul>
+			<li><a target="_blank" href="https://Binary-Game-Python-Version.hmccabe2002.repl.run">Binary Conversion Game</a></li>
             <li><a target="_blank" href="https://ELIZA.hmccabe2002.repl.run">ELIZA Therapist Bot</a></li>
             <li><a target="_blank" href="https://Until-Dawn-Prologue.hmccabe2002.repl.run">Until Dawn Prologue Text Adventure (Unfinished)</a></li>
-            <li><a target="_blank" href="https://ZORK-v1.hmccabe2002.repl.run">Zork - The Unofficial Python Version</a></li>
+            <li class="end"><a target="_blank" href="https://ZORK-v1.hmccabe2002.repl.run">Zork - The Unofficial Python Version</a></li>
+		</ul></div>
 
-        </ul>
-        <!--Professional
-        <ul>
-            
-        </ul>-->
-    </aside>
+	<div id="three" class="tab-content"><ul><li class="end">No C++ Programs Yet</li></ul></div>
+</div>
+
+	</aside>
     <br>
     <main>
         <table>
