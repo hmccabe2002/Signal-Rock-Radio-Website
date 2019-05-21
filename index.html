@@ -47,25 +47,7 @@
         td{
         padding-left: 0.5em;
         }
-        aside ul li{
-			list-style-type: none;
-			display:inline;
-		}
-		aside ul li:before{
-			content: "• ";
-		}
-		aside ul li.end:after{
-			content: " •";
-		}
-		aside ul li a{
-			text-decoration: none;
-			border: 1px solid black;
-			color: black;
-		}
-		aside ul li a:hover{
-			border: 1px solid crimson;
-			color: crimson;
-		}
+
         footer{
         clear: both;
         }
@@ -88,6 +70,20 @@ color: black;
 .show {
 	display: block;
 }
+.title {
+    font-weight: 600;
+}
+#prog {
+    
+}
+footer {
+}
+a {
+color: crimson;
+}
+a:hover{
+color: blue;
+}
     </style>
 	<script>
 	$(document).ready(function(){
@@ -108,58 +104,15 @@ color: black;
         <h1>HUNTER ADAM McCABE</h1>
         <address><a href="tel:6362265107">(636) 226-5107</a><br><a href="mailto:hmccabewcp@gmx.com">hmccabewcp@gmx.com</a></address>
     </header>
-	<aside>
 	<br>
 	<div class="tabs">
 	<nav class="tab-list">
-		<a class="tab active" href="#one">HTML, CSS, JavaScript</a>
-		<a class="tab" href="#two">Python</a>
-		<a class="tab" href="#three">C++</a>
-		<a class="tab" href="#four">C#</a>
-		<a class="tab" href="#five">C</a>
+        <a class="tab active" href="#one">Resume</a>
+		<a class="tab" href="#two">Code Snippets</a>
+        <a class="tab" href="#three">Programs</a>
 	</nav>
 	<br>
-	<div id="one" class="tab-content show"><ul>
-			<li><a target="_blank" href="https://hmccabe2002.github.io/mdeditor">Markdown Editor</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/PythonShell">Python Shell with Brython</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/facebookloginpage">Facebook Login Page Replica</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/roadsigntest">Road Sign Test</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/lcdclock">LCD Clock</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/wheelspinner">Spinner Wheel</a></li>
-            <li><a target="_blank" href="https://hmccabe2002.github.io/notes">Notes</a></li>
-		<li><a target="_blank" href="https://hmccabe2002.github.io/magic8balljs">Magic 8 Ball</a></li>
-		<li><a target="_blank" href="https://hmccabe2002.github.io/htmlcssjseditor">HTML, CSS, JS Editor</a></li>
-		<li class="end"><a target="_blank" href="https://hmccabe2002.github.io/richtexteditor">Rich Text Editor</a></li>
-		</ul></div>
-
-	<div id="two" class="tab-content"><ul>
-			<li><a target="_blank" href="https://Binary-Game-Python-Version.hmccabe2002.repl.run">Binary Conversion Game</a></li>
-            <li><a target="_blank" href="https://ELIZA.hmccabe2002.repl.run">ELIZA Therapist Bot</a></li>
-            <li><a target="_blank" href="https://Until-Dawn-Prologue.hmccabe2002.repl.run">Until Dawn Prologue Text Adventure (Unfinished)</a></li>
-            <li><a target="_blank" href="https://ZORK-v1.hmccabe2002.repl.run">Zork - The Unofficial Python Version</a></li>
-		<li class="end"><a target="_blank" href="https://Username-Password-Login-Prompt.hmccabe2002.repl.run">Login System</a></li>
-		</ul></div>
-
-	<div id="three" class="tab-content"><ul>
-		<li><a target="_blank" href="https://Basic-Calculator-in-C.hmccabe2002.repl.run">Basic Calculator</a></li>
-		<li class="end"><a target="_blank" href="https://ASCII-Game.hmccabe2002.repl.run">ASCII RPG Game</a></li>
-		</ul>
-		</div>
-		<div id="four" class="tab-content"><ul>
-		<li class="end"><a target="_blank" href="https://Lesson-1.hmccabe2002.repl.run">Hello, Hunter!</a></li>
-		</ul>
-		</div>
-		<div id="five" class="tab-content"><ul>
-		<li><a target="_blank" href="https://Program-to-print-half-pyramid-using-alphabets.hmccabe2002.repl.run">Alphabet Half-Pyramid</a></li>
-		<li><a target="_blank" href="https://Program-to-print-full-pyramid-using.hmccabe2002.repl.run">Asterisk Pyramid</a></li>
-		<li class="end"><a target="_blank" href="https://Multiplication-Table-in-C.hmccabe2002.repl.run">Multiplication Table</a></li>
-		</ul>
-		</div>
-</div>
-
-	</aside>
-    <br>
-    <main>
+    <div id="one" class="tab-content show">
         <table>
             <tr>
                 <th><br>Skills Summary</th><td><br>Proficient in Microsoft Suite;<br>Developing web pages with HTML5, CSS3, and JavaScript;<br>Programming with Python, Ruby, and C;<br>Intermediate Percussion and Intermediate Guitar player.<br><br></td>
@@ -201,7 +154,55 @@ Stefanie Buscher
 </pre></td>
             </tr>
         </table>
-    </main>
+        </div>
+		<div id="two" class="tab-content">
+        <h2>Code Snippets</h2>
+		<p>No Snippets Yet</p>
+        </div>
+        <div id="three" class="tab-content">
+        <h2>Programs</h2>
+        <div id="prog">
+		<p class="title">HTML, CSS, JavaScript</p>
+        <ul>
+        <li><a target="_blank" href="https://hmccabe2002.github.io/mdeditor">Markdown Editor</a></li>
+            <li><a target="_blank" href="https://hmccabe2002.github.io/PythonShell">Python Shell with Brython</a></li>
+            <li><a target="_blank" href="https://hmccabe2002.github.io/facebookloginpage">Facebook Login Page Replica</a></li>
+            <li><a target="_blank" href="https://hmccabe2002.github.io/roadsigntest">Road Sign Test</a></li>
+            <li><a target="_blank" href="https://hmccabe2002.github.io/lcdclock">LCD Clock</a></li>
+            <li><a target="_blank" href="https://hmccabe2002.github.io/wheelspinner">Spinner Wheel</a></li>
+            <li><a target="_blank" href="https://hmccabe2002.github.io/notes">Notes</a></li>
+		<li><a target="_blank" href="https://hmccabe2002.github.io/magic8balljs">Magic 8 Ball</a></li>
+		<li><a target="_blank" href="https://hmccabe2002.github.io/htmlcssjseditor">HTML, CSS, JS Editor</a></li>
+		<li class="end"><a target="_blank" href="https://hmccabe2002.github.io/richtexteditor">Rich Text Editor</a></li>
+        </ul>
+        <p class="title">PYTHON</p>
+        <ul>
+        <li><a target="_blank" href="https://Binary-Game-Python-Version.hmccabe2002.repl.run">Binary Conversion Game</a></li>
+            <li><a target="_blank" href="https://ELIZA.hmccabe2002.repl.run">ELIZA Therapist Bot</a></li>
+            <li><a target="_blank" href="https://Until-Dawn-Prologue.hmccabe2002.repl.run">Until Dawn Prologue Text Adventure (Unfinished)</a></li>
+            <li><a target="_blank" href="https://ZORK-v1.hmccabe2002.repl.run">Zork - The Unofficial Python Version</a></li>
+		<li class="end"><a target="_blank" href="https://Username-Password-Login-Prompt.hmccabe2002.repl.run">Login System</a></li>
+        </ul>
+        <p class="title">C++</p>
+        <ul>
+        <li><a target="_blank" href="https://Basic-Calculator-in-C.hmccabe2002.repl.run">Basic Calculator</a></li>
+<li class="end"><a target="_blank" href="https://ASCII-Game.hmccabe2002.repl.run">ASCII RPG Game</a></li>
+        </ul>
+        <p class="title">C#</p>
+        <ul>
+        <li class="end"><a target="_blank" href="https://Lesson-1.hmccabe2002.repl.run">Hello, Hunter!</a></li>
+
+        </ul>
+        <p class="title">C</p>
+        <ul>
+        <li><a target="_blank" href="https://Program-to-print-half-pyramid-using-alphabets.hmccabe2002.repl.run">Alphabet Half-Pyramid</a></li>
+		<li><a target="_blank" href="https://Program-to-print-full-pyramid-using.hmccabe2002.repl.run">Asterisk Pyramid</a></li>
+		<li class="end"><a target="_blank" href="https://Multiplication-Table-in-C.hmccabe2002.repl.run">Multiplication Table</a></li>
+        </ul>
+        </div>
+        </div>
+</div>    <br>
+    
     <footer>
         <br>
         <hr>
@@ -209,7 +210,7 @@ Stefanie Buscher
         <br>
         <div id="social">
             
-          <a target="_blank" href="https://https://github.com/hmccabe2002"><i class="fab fa-github"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://codepen.io/hmccabe2002/"><i class="fab fa-codepen"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://www.instagram.com/hmccabemusic/"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="https://github.com/hmccabe2002" title="Github"><i class="fab fa-github"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://codepen.io/hmccabe2002/" title="Codepen"><i class="fab fa-codepen"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://www.instagram.com/hmccabemusic" title="Instagram"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://facebook.com/hmccabemusic" title="Facebook"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://twitter.com/hmccabemusic" title="Twitter"><i class="fab fa-facebook"></i></a>
         </div>
             <br>
     </footer>
