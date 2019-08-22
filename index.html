@@ -87,6 +87,40 @@ color: blue;
 .discord_server {
 	text-align:center;
 	    }
+.container {
+  width: 520px;
+  margin-top: 20px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.counter {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.posts li {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 42px;
+}
     </style>
 	<script>
 	$(document).ready(function(){
@@ -161,6 +195,22 @@ Stefanie Buscher
         </div>
 		<div id="two" class="tab-content">
         <h2>Extras</h2>
+			<div class="container">
+      <form>
+        <div class="form-group">
+          <textarea class="form-control status-box" rows="2" placeholder="Make a post"></textarea>
+        </div>
+      </form>
+      <div class="button-group pull-right">
+        <p class="counter">140</p>
+        <a href="#" class="btn btn-primary">Post</a>
+      </div>
+
+      <ul class="posts">
+      </ul>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<div class="discord_server"><iframe src="https://discordapp.com/widget?id=613845928775778323&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></div>
         </div>
         <div id="three" class="tab-content">
